@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "RinaWarp Terminal Pro backend server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "kill": "kill -9 $(lsof -t -i:3001) 2>/dev/null || kill -9 $(lsof -t -i:8080) 2>/dev/null || echo '✅ No backend process running'",
+    "restart": "npm run kill && npm start"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "helmet": "^7.1.0",
+    "openai": "^4.68.4",
+    "stripe": "^19.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
