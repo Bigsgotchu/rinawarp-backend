@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download RinaWarp Terminal Pro | AI-Powered Terminal</title>
+    <meta name="description" content="Download RinaWarp Terminal Pro - The command line with a mind of its own. Available for Linux, macOS, and Windows.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="RinaWarp Terminal Pro - AI Terminal">
+    <meta property="og:description" content="Next-generation AI terminal with voice control and multi-model intelligence">
+    <meta property="og:image" content="https://rinawarptech.com/og-terminal-pro.jpg">
+    <meta property="og:url" content="https://rinawarptech.com/downloads">
+    
+    <!-- Google Analytics 4 -->
+    <script src="/ga4-tracking.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --hot-pink: #FF1B8D;
+            --coral: #FF6B35;
+            --baby-blue: #89CFF0;
+            --teal: #00CED1;
+            --black: #0A0A0A;
+            --dark-gray: #1A1A1A;
+            --light-gray: #2A2A2A;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
+            color: #fff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Animated gradient background */
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 27, 141, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 206, 209, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+            z-index: -1;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--hot-pink), var(--coral), var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--hot-pink);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 5rem 5% 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--hot-pink), var(--coral), var(--baby-blue), var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .version-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 27, 141, 0.2);
+            border: 1px solid var(--hot-pink);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Download Section */
+        .download-section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .download-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--hot-pink);
+            box-shadow: 0 10px 40px rgba(255, 27, 141, 0.3);
+        }
+
+        .os-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-card .file-info {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--hot-pink), var(--coral));
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255, 27, 141, 0.5);
+        }
+
+        .download-btn.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 5%;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, var(--baby-blue), var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--hot-pink);
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        /* System Requirements */
+        .requirements {
+            max-width: 800px;
+            margin: 5rem auto;
+            padding: 2rem 5%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+        }
+
+        .requirements h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--teal);
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .requirements li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--teal);
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 5rem;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-bg"></div>
+
+    <header>
+        <div class="logo">⚡ RinaWarp</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/downloads">Downloads</a>
+            <a href="/docs">Docs</a>
+            <a href="/pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>RinaWarp Terminal Pro</h1>
+        <p class="tagline">"The command line with a mind of its own."</p>
+        <div class="version-badge">✨ Version 1.0.0 | Production Ready</div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" style="max-width: 1600px; margin: 3rem auto; padding: 0 5%;">
+        <h2 style="text-align: center; font-size: 3rem; margin-bottom: 0.5rem; background: linear-gradient(135deg, var(--hot-pink), var(--coral)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+            Your Terminal. Your Rules.
+        </h2>
+        <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 1rem; font-size: 1.3rem;">
+            Start free, upgrade when ready.
+        </p>
+        <p style="text-align: center; color: rgba(255,255,255,0.6); margin-bottom: 2rem; font-size: 1rem;">
+            The first 500 lifetime licenses will never renew — once sold, they're gone forever.
+        </p>
+        
+        <!-- Limited Offer Banner -->
+        <div style="max-width: 600px; margin: 0 auto 3rem; padding: 1.5rem; background: rgba(255, 27, 141, 0.1); border: 2px solid var(--hot-pink); border-radius: 16px; text-align: center;">
+            <div style="font-size: 1.2rem; font-weight: 700; color: var(--hot-pink); margin-bottom: 1rem;">
+                🎟️ Limited Offer: 500 Total Lifetime Licenses
+            </div>
+            <div style="font-size: 0.95rem; color: rgba(255,255,255,0.8); margin-bottom: 1rem;">
+                • First 200 → $700 (Pioneer Tier)<br>
+                • Next 300 → $999 (Founder Tier)<br>
+                <strong>After 500, lifetime licenses close forever.</strong>
+            </div>
+            <!-- Progress Bar -->
+            <div style="background: rgba(0,0,0,0.3); border-radius: 20px; height: 30px; overflow: hidden; margin-bottom: 0.5rem;">
+                <div id="progress-bar" style="background: linear-gradient(90deg, var(--hot-pink), var(--coral)); height: 100%; width: 30%; transition: width 0.5s; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem;">
+                    <span id="progress-text">153 / 500 Claimed</span>
+                </div>
+            </div>
+            <div style="font-size: 0.8rem; color: rgba(255,255,255,0.5);">
+                <span id="remaining-count">347</span> licenses remaining
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem;">
+            <!-- Community Free -->
+            <div class="download-card" style="border-color: rgba(137, 207, 240, 0.3);">
+                <div style="background: rgba(137, 207, 240, 0.1); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: var(--baby-blue); font-weight: 600; font-size: 0.85rem;">FREE</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Community</h3>
+                <div style="font-size: 2rem; font-weight: 700; margin: 0.8rem 0; color: var(--baby-blue);">
+                    $0
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Trial users exploring RinaWarp</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.8); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ 10 AI requests/day</li>
+                    <li style="padding: 0.3rem 0;">✓ Basic Rina personality</li>
+                    <li style="padding: 0.3rem 0;">✓ CLI sandbox</li>
+                    <li style="padding: 0.3rem 0;">✓ Auto-updater</li>
+                    <li style="padding: 0.3rem 0; color: rgba(255,255,255,0.4);">✗ Voice commands</li>
+                    <li style="padding: 0.3rem 0; color: rgba(255,255,255,0.4);">✗ Cloud sync</li>
+                </ul>
+                <a href="#downloads" class="download-btn secondary" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                    Download Free
+                </a>
+            </div>
+
+            <!-- Starter $9.99 -->
+            <div class="download-card" style="border-color: rgba(255, 107, 53, 0.3);">
+                <div style="background: rgba(255, 107, 53, 0.1); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: var(--coral); font-weight: 600; font-size: 0.85rem;">STARTER</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Starter</h3>
+                <div style="font-size: 2rem; font-weight: 700; margin: 0.8rem 0; color: var(--coral);">
+                    $9.99<span style="font-size: 0.9rem; color: rgba(255,255,255,0.5);">/mo</span>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Light users, hobbyists</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.8); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ 100 AI requests/day</li>
+                    <li style="padding: 0.3rem 0;">✓ Full Rina personality</li>
+                    <li style="padding: 0.3rem 0;">✓ Voice commands</li>
+                    <li style="padding: 0.3rem 0;">✓ Session save/restore</li>
+                    <li style="padding: 0.3rem 0;">✓ Standard support</li>
+                    <li style="padding: 0.3rem 0; color: rgba(255,255,255,0.4);">✗ Multi-agent AI</li>
+                </ul>
+                <button class="download-btn secondary" onclick="buyLicense('starter', 9.99)" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                    Subscribe
+                </button>
+            </div>
+
+            <!-- Creator $29.99 -->
+            <div class="download-card" style="border-color: rgba(0, 206, 209, 0.3);">
+                <div style="background: rgba(0, 206, 209, 0.1); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: var(--teal); font-weight: 600; font-size: 0.85rem;">CREATOR</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Creator</h3>
+                <div style="font-size: 2rem; font-weight: 700; margin: 0.8rem 0; color: var(--teal);">
+                    $29.99<span style="font-size: 0.9rem; color: rgba(255,255,255,0.5);">/mo</span>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Solo developers & AI creatives</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.8); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ Unlimited AI requests</li>
+                    <li style="padding: 0.3rem 0;">✓ Multi-agent orchestration</li>
+                    <li style="padding: 0.3rem 0;">✓ Cloud sync</li>
+                    <li style="padding: 0.3rem 0;">✓ Plugin system</li>
+                    <li style="padding: 0.3rem 0;">✓ Priority support</li>
+                    <li style="padding: 0.3rem 0;">✓ 1 team seat</li>
+                </ul>
+                <button class="download-btn secondary" onclick="buyLicense('creator', 29.99)" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                    Subscribe
+                </button>
+            </div>
+
+            <!-- Pro $49.99 -->
+            <div class="download-card" style="border-color: rgba(255, 27, 141, 0.5); box-shadow: 0 5px 20px rgba(255, 27, 141, 0.2);">
+                <div style="background: rgba(255, 27, 141, 0.15); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: var(--hot-pink); font-weight: 600; font-size: 0.85rem;">PRO</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Pro</h3>
+                <div style="font-size: 2rem; font-weight: 700; margin: 0.8rem 0; color: var(--hot-pink);">
+                    $49.99<span style="font-size: 0.9rem; color: rgba(255,255,255,0.5);">/mo</span>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Professionals & power users</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.9); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ Everything in Creator</li>
+                    <li style="padding: 0.3rem 0;">✓ Advanced Rina AI</li>
+                    <li style="padding: 0.3rem 0;">✓ VIP support</li>
+                    <li style="padding: 0.3rem 0;">✓ 3 team seats</li>
+                    <li style="padding: 0.3rem 0;">✓ Future RinaWarp apps</li>
+                    <li style="padding: 0.3rem 0;">✓ Beta access</li>
+                </ul>
+                <button class="download-btn" onclick="buyLicense('pro', 49.99)" style="font-size: 0.9rem; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, var(--hot-pink), var(--coral));">
+                    Subscribe
+                </button>
+            </div>
+
+            <!-- Lifetime Pioneer $700 -->
+            <div class="download-card" style="border-color: var(--hot-pink); position: relative; box-shadow: 0 10px 40px rgba(255, 27, 141, 0.4); transform: scale(1.02);">
+                <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--hot-pink), var(--coral)); padding: 0.4rem 1.2rem; border-radius: 16px; font-weight: 700; font-size: 0.7rem;">
+                    🏆 PIONEER
+                </div>
+                <div style="background: rgba(255, 27, 141, 0.15); padding: 0.4rem; border-radius: 6px; margin: 0.8rem 0;">
+                    <span style="color: var(--hot-pink); font-weight: 600; font-size: 0.85rem;">LIFETIME</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Pioneer</h3>
+                <div style="font-size: 2.2rem; font-weight: 700; margin: 0.8rem 0;">
+                    <span style="background: linear-gradient(135deg, var(--hot-pink), var(--coral)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">$700</span>
+                    <span style="font-size: 0.85rem; color: rgba(255,255,255,0.5); text-decoration: line-through; display: block;">$999</span>
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">First 200 early supporters</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.95); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ All Pro features</li>
+                    <li style="padding: 0.3rem 0;">✓ Lifetime access</li>
+                    <li style="padding: 0.3rem 0;">✓ VIP support</li>
+                    <li style="padding: 0.3rem 0;">✓ 5 team seats</li>
+                    <li style="padding: 0.3rem 0;">✓ Founder badge</li>
+                    <li style="padding: 0.3rem 0;">✓ All future apps</li>
+                </ul>
+                <button class="download-btn" onclick="buyLicense('pioneer', 700)" style="font-size: 0.9rem; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, var(--hot-pink), var(--coral));">
+                    🚀 Get Pioneer
+                </button>
+                <p style="font-size: 0.7rem; color: var(--hot-pink); margin-top: 0.8rem; font-weight: 600;">
+                    <span class="pioneer-remaining">200</span> remaining
+                </p>
+            </div>
+
+            <!-- Lifetime Founder $999 -->
+            <div class="download-card" style="border-color: rgba(137, 207, 240, 0.5);">
+                <div style="background: rgba(137, 207, 240, 0.1); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: var(--baby-blue); font-weight: 600; font-size: 0.85rem;">LIFETIME</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Founder</h3>
+                <div style="font-size: 2.2rem; font-weight: 700; margin: 0.8rem 0; color: var(--baby-blue);">
+                    $999
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Remaining 300 supporters</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.85); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ All Pro features</li>
+                    <li style="padding: 0.3rem 0;">✓ Lifetime access</li>
+                    <li style="padding: 0.3rem 0;">✓ VIP support</li>
+                    <li style="padding: 0.3rem 0;">✓ 5 team seats</li>
+                    <li style="padding: 0.3rem 0;">✓ Founder badge</li>
+                    <li style="padding: 0.3rem 0;">✓ All future apps</li>
+                </ul>
+                <button class="download-btn secondary" onclick="buyLicense('founder', 999)" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                    Buy Founder
+                </button>
+                <p style="font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 0.8rem;">
+                    After Pioneer sells out
+                </p>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="download-card" style="border-color: rgba(255, 255, 255, 0.2);">
+                <div style="background: rgba(255, 255, 255, 0.05); padding: 0.4rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <span style="color: #fff; font-weight: 600; font-size: 0.85rem;">ENTERPRISE</span>
+                </div>
+                <h3 style="font-size: 1.3rem;">Enterprise</h3>
+                <div style="font-size: 2rem; font-weight: 700; margin: 0.8rem 0; color: #fff;">
+                    Custom
+                </div>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.2rem;">Studios, orgs, teams</p>
+                <ul style="text-align: left; list-style: none; padding: 0; margin-bottom: 1.5rem; color: rgba(255,255,255,0.8); font-size: 0.8rem;">
+                    <li style="padding: 0.3rem 0;">✓ Unlimited seats</li>
+                    <li style="padding: 0.3rem 0;">✓ On-premise deployment</li>
+                    <li style="padding: 0.3rem 0;">✓ SLA-level support</li>
+                    <li style="padding: 0.3rem 0;">✓ Custom integrations</li>
+                    <li style="padding: 0.3rem 0;">✓ Dedicated account manager</li>
+                    <li style="padding: 0.3rem 0;">✓ Annual license</li>
+                </ul>
+                <a href="/support" class="download-btn secondary" style="font-size: 0.9rem; padding: 0.8rem 1.5rem;">
+                    Contact Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download-section" id="downloads">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem; color: var(--baby-blue);">
+            Choose Your Platform
+        </h2>
+        <div class="download-grid">
+            <!-- Linux -->
+            <div class="download-card">
+                <div class="os-icon">🐧</div>
+                <h3>Linux</h3>
+                <p class="file-info">AppImage (104 MB) | .deb (72 MB)</p>
+                <a href="https://rinawarptech.com/downloads/RinaWarp-Terminal-Pro-1.0.0.AppImage" class="download-btn">
+                    Download AppImage
+                </a>
+                <br><br>
+                <a href="https://rinawarptech.com/downloads/rinawarp-terminal-pro_1.0.0_amd64.deb" class="download-btn secondary">
+                    Download .deb
+                </a>
+            </div>
+
+            <!-- macOS -->
+            <div class="download-card">
+                <div class="os-icon">🍎</div>
+                <h3>macOS</h3>
+                <p class="file-info">Universal .dmg (Coming Soon)</p>
+                <a href="#" class="download-btn" style="opacity: 0.5; cursor: not-allowed;">
+                    Coming Soon
+                </a>
+                <br><br>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 1rem;">
+                    macOS build in progress
+                </p>
+            </div>
+
+            <!-- Windows -->
+            <div class="download-card">
+                <div class="os-icon">🪟</div>
+                <h3>Windows</h3>
+                <p class="file-info">.exe Installer (Coming Soon)</p>
+                <a href="#" class="download-btn" style="opacity: 0.5; cursor: not-allowed;">
+                    Coming Soon
+                </a>
+                <br><br>
+                <p style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 1rem;">
+                    Windows build in progress
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>✨ Core Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Multi-Model AI</h3>
+                <p>OpenAI, Anthropic, Ollama, and Groq integration with intelligent routing</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Secure Execution</h3>
+                <p>Sandboxed CLI with blacklist protection and timeout limits</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Warp-Style UI</h3>
+                <p>Beautiful mermaid gradient theme with floating command input</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔊</div>
+                <h3>Voice Control</h3>
+                <p>ElevenLabs voice synthesis and command input (coming in v1.5)</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Built on Electron 28.2.3 + Vite for instant performance</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Auto-Updates</h3>
+                <p>Seamless version updates across all platforms (v1.5)</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements">
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>Linux:</strong> Ubuntu 20.04+, Debian 11+, or compatible (x86_64)</li>
+            <li><strong>macOS:</strong> macOS 10.15 Catalina or later (Intel & Apple Silicon)</li>
+            <li><strong>Windows:</strong> Windows 10/11 (64-bit)</li>
+            <li><strong>RAM:</strong> 4 GB minimum, 8 GB recommended</li>
+            <li><strong>Storage:</strong> 500 MB free space</li>
+            <li><strong>Network:</strong> Internet connection for AI features</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 2rem; text-align: left;">
+                <!-- Company -->
+                <div>
+                    <h4 style="color: var(--hot-pink); margin-bottom: 1rem;">Company</h4>
+                    <p style="margin: 0.5rem 0;"><a href="/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/about" style="color: rgba(255,255,255,0.7); text-decoration: none;">About Us</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/contact" style="color: rgba(255,255,255,0.7); text-decoration: none;">Contact</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/careers" style="color: rgba(255,255,255,0.7); text-decoration: none;">Careers</a></p>
+                </div>
+                
+                <!-- Product -->
+                <div>
+                    <h4 style="color: var(--hot-pink); margin-bottom: 1rem;">Product</h4>
+                    <p style="margin: 0.5rem 0;"><a href="/downloads" style="color: rgba(255,255,255,0.7); text-decoration: none;">Downloads</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/pricing" style="color: rgba(255,255,255,0.7); text-decoration: none;">Pricing</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/docs" style="color: rgba(255,255,255,0.7); text-decoration: none;">Documentation</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/changelog" style="color: rgba(255,255,255,0.7); text-decoration: none;">Changelog</a></p>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h4 style="color: var(--hot-pink); margin-bottom: 1rem;">Legal</h4>
+                    <p style="margin: 0.5rem 0;"><a href="/legal/terms" style="color: rgba(255,255,255,0.7); text-decoration: none;">Terms of Service</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/legal/privacy" style="color: rgba(255,255,255,0.7); text-decoration: none;">Privacy Policy</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/legal/eula" style="color: rgba(255,255,255,0.7); text-decoration: none;">EULA</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/legal/copyright" style="color: rgba(255,255,255,0.7); text-decoration: none;">Copyright</a></p>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 style="color: var(--hot-pink); margin-bottom: 1rem;">Support</h4>
+                    <p style="margin: 0.5rem 0;"><a href="/support" style="color: rgba(255,255,255,0.7); text-decoration: none;">Help Center</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/community" style="color: rgba(255,255,255,0.7); text-decoration: none;">Community</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="mailto:support@rinawarptech.com" style="color: rgba(255,255,255,0.7); text-decoration: none;">Email Support</a></p>
+                    <p style="margin: 0.5rem 0;"><a href="/status" style="color: rgba(255,255,255,0.7); text-decoration: none;">System Status</a></p>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center;">
+                <p style="color: rgba(255,255,255,0.5); margin-bottom: 0.5rem;">
+                    © 2025 RinaWarp Technologies, LLC. All rights reserved.
+                </p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem;">
+                    Salt Lake City, UT | 
+                    <a href="mailto:legal@rinawarptech.com" style="color: rgba(255,255,255,0.4); text-decoration: none;">legal@rinawarptech.com</a>
+                </p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 0.5rem;">
+                    RinaWarp™, RinaWarp Terminal Pro™, and Rina™ are trademarks of RinaWarp Technologies, LLC
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Track remaining early bird licenses
+        let remainingEarlyBird = 200;
+        
+        // Load from localStorage if available
+        if (localStorage.getItem('earlyBirdRemaining')) {
+            remainingEarlyBird = parseInt(localStorage.getItem('earlyBirdRemaining'));
+            document.getElementById('remaining-early').textContent = remainingEarlyBird;
+        }
+
+        // Purchase function
+        async function buyLicense(tier, price) {
+            try {
+                // Backend URL - always use Render in production
+                const backendUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+                    ? 'http://localhost:3001'
+                    : 'https://rinawarp-backend.onrender.com';
+                
+                console.log('🔗 Using backend URL:', backendUrl);
+                
+                // Map tier to Stripe price ID - LIVE PRODUCTION IDs
+                const priceIds = {
+                    'starter': 'price_1SOjFGGZrRdZy3W9CRldLZh5',
+                    'creator': 'price_1SOjFPGZrRdZy3W9IIm6ueBj',
+                    'pro': 'price_1SOjFXGZrRdZy3W9bNz4HpfN',
+                    'pioneer': 'price_1SOjEcGZrRdZy3W9PAbnoQ1p',
+                    'founder': 'price_1SOjEdGZrRdZy3W9ll2FuOTW'
+                };
+                
+                const priceId = priceIds[tier];
+                if (!priceId) {
+                    alert('Invalid pricing tier. Please contact support@rinawarptech.com');
+                    return;
+                }
+                
+                // Get user email (you might want to add an email input form)
+                const email = prompt('Enter your email address:');
+                if (!email || !email.includes('@')) {
+                    alert('Valid email address required');
+                    return;
+                }
+                
+                const response = await fetch(`${backendUrl}/api/stripe/checkout`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        priceId: priceId,
+                        email: email,
+                        mode: tier === 'pioneer' || tier === 'founder' ? 'payment' : 'subscription'
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                if (!data.ok || !data.url) {
+                    throw new Error(data.error || 'Failed to create checkout session');
+                }
+                
+                // Decrement early bird counter
+                if (tier === 'pioneer' && remainingEarlyBird > 0) {
+                    remainingEarlyBird--;
+                    localStorage.setItem('earlyBirdRemaining', remainingEarlyBird);
+                    const pioneerElements = document.querySelectorAll('.pioneer-remaining');
+                    pioneerElements.forEach(el => el.textContent = remainingEarlyBird);
+                }
+                
+                // Redirect to Stripe checkout
+                window.location.href = data.url;
+            } catch (error) {
+                console.error('Checkout error:', error);
+                alert(`Error creating checkout session: ${error.message}\n\nPlease try again or contact support@rinawarptech.com`);
+            }
+        }
+
+        // Auto-detect OS and highlight appropriate download
+        const userAgent = navigator.userAgent.toLowerCase();
+        const downloadCards = document.querySelectorAll('#downloads .download-card');
+        
+        if (userAgent.includes('linux')) {
+            downloadCards[0].style.borderColor = 'var(--hot-pink)';
+        } else if (userAgent.includes('mac')) {
+            downloadCards[1].style.borderColor = 'var(--hot-pink)';
+        } else if (userAgent.includes('win')) {
+            downloadCards[2].style.borderColor = 'var(--hot-pink)';
+        }
+    </script>
+</body>
+</html>
