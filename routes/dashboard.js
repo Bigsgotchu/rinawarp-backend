@@ -8,7 +8,7 @@
 
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import logger from '../utils/logger.js';
+import logger from './src/utils/logger.js';
 
 const router = express.Router();
 

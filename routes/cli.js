@@ -9,9 +9,9 @@
 import express from 'express';
 import { exec } from 'child_process';
 import { promisify } from 'util';
-import { requireValidLicense } from '../middleware/license-mw.js';
-import { testLicenseBypass } from '../middleware/test-license-bypass.js';
-import logger from '../utils/logger.js';
+import { requireValidLicense } from './middleware/license-mw.js';
+import { testLicenseBypass } from './middleware/test-license-bypass.js';
+import logger from './src/utils/logger.js';
 
 // Chain middlewares: test bypass first (only in dev), then license check
 const licenseMiddleware = process.env.NODE_ENV === 'development'

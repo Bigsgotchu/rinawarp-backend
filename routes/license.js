@@ -2,8 +2,8 @@
 import express from 'express';
 import fs from 'fs';
 import jwt from 'jsonwebtoken';
-import { checkLicense } from '../middleware/checkLicense.js';
-import logger from '../utils/logger.js';
+import { checkLicense } from './middleware/checkLicense.js';
+import logger from './src/utils/logger.js';
 
 const router = express.Router();
 

@@ -8,9 +8,9 @@
  */
 
 import express from 'express';
-import { requireValidLicense } from '../middleware/license-mw.js';
-import { testLicenseBypass } from '../middleware/test-license-bypass.js';
-import logger from '../utils/logger.js';
+import { requireValidLicense } from './middleware/license-mw.js';
+import { testLicenseBypass } from './middleware/test-license-bypass.js';
+import logger from './src/utils/logger.js';
 
 const router = express.Router();
 
