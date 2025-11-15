@@ -232,6 +232,7 @@ logger.info('SERVER', '🔌 Terminal WebSocket server attached');
 // --- Start Server ---
 server.listen(PORT, () => {
   logger.success('SERVER', `🚀 RinaWarp backend running on port ${PORT}`);
+  logger.info('SERVER', '✅ Render deployment fix applied');
   logger.info('SERVER', `🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
   logger.info('SERVER', `🔒 CORS Origins: ${corsOptions.origin.join(', ')}`);
   logger.info('SERVER', `🔌 WebSocket Endpoint: ws://localhost:${PORT}/ws/terminal`);
