@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: rinawarp-backend
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGINS
+        value: https://rinawarptech.com,https://www.rinawarptech.com
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 60000
+      - key: RATE_LIMIT_MAX
+        value: 120
+      - key: LICENSE_ISSUER
+        value: RinaWarp
+      - key: ADMIN_KEY
+        value: admin_rinawarp_2025
+      # These will be set manually in Render dashboard:
+      # - STRIPE_SECRET_KEY
+      # - STRIPE_PUBLISHABLE_KEY
+      # - STRIPE_WEBHOOK_SECRET
+      # - STRIPE_SUCCESS_URL
+      # - STRIPE_CANCEL_URL
+      # - LICENSE_SIGNING_PRIVATE_KEY_PATH

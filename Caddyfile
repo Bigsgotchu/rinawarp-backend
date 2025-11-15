@@ -1,0 +1,21 @@
+api.rinawarptech.com {
+    encode gzip
+    @corsPreflight method OPTIONS
+    handle @corsPreflight {
+        header Access-Control-Allow-Origin "*"
+        header Access-Control-Allow-Headers "*"
+        header Access-Control-Allow-Methods "GET,POST,PUT,PATCH,DELETE,OPTIONS"
+        respond "" 204
+    }
+
+    reverse_proxy app:8000
+
+    # Optional security hardening
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+    }
+
+    tls youremail@example.com
+}

@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  rinawarp-backend:
+    image: ghcr.io/rinawarp/rinawarp-backend:latest
+    container_name: rinawarp-backend
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - CORS_ORIGINS=https://rinawarptech.com,https://www.rinawarptech.com
+      # Load from .env.production
+      - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
+      - STRIPE_PUBLISHABLE_KEY=${STRIPE_PUBLISHABLE_KEY}
+      - STRIPE_WEBHOOK_SECRET=${STRIPE_WEBHOOK_SECRET}
+      - LICENSE_ISSUER=${LICENSE_ISSUER:-RinaWarp}
+      - LICENSE_SECRET=${LICENSE_SECRET}
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - JWT_SECRET=${JWT_SECRET}
+      - RATE_LIMIT_WINDOW_MS=${RATE_LIMIT_WINDOW_MS:-60000}
+      - RATE_LIMIT_MAX=${RATE_LIMIT_MAX:-120}
+    env_file:
+      - .env.production
+    volumes:
+      - ./logs:/app/logs
+      - ./keys:/app/keys:ro
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/api/health', (r) => { process.exit(r.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - rinawarp-network
+
+  # Optional: Add Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: rinawarp-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - rinawarp-network
+
+  # Optional: Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: rinawarp-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - rinawarp-backend
+    networks:
+      - rinawarp-network
+
+networks:
+  rinawarp-network:
+    driver: bridge
+
+volumes:
+  redis_data:

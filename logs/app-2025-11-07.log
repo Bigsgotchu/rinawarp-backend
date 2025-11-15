@@ -1,0 +1,19 @@
+[2025-11-07T05:12:59.809Z] [INFO] [SERVER] 🌍 Loaded environment from ../.env.production
+[2025-11-07T05:12:59.977Z] [INFO] [SENTRY] 🔍 Sentry request tracking enabled
+[2025-11-07T05:13:58.284Z] [INFO] [SERVER] 🌍 Loaded environment from ../.env.production
+[2025-11-07T05:13:58.425Z] [INFO] [SENTRY] 🔍 Sentry request tracking enabled
+[2025-11-07T05:14:35.178Z] [INFO] [SERVER] 🌍 Loaded environment from ../.env.production
+[2025-11-07T05:14:35.322Z] [INFO] [SENTRY] 🔍 Sentry request tracking enabled
+[2025-11-07T05:14:35.329Z] [SUCCESS] [SERVER] 🚀 RinaWarp backend running on port 3001
+[2025-11-07T05:14:35.329Z] [INFO] [SERVER] 🌍 Environment: production
+[2025-11-07T05:14:35.329Z] [INFO] [SERVER] 🔒 CORS Origins: https://rinawarptech.com, https://www.rinawarptech.com, https://rinawarp-terminal.netlify.app
+🌙 [CALM RINA]: Backend initialized and ready to serve!
+[2025-11-07T05:15:05.956Z] [INFO] [HEALTH] Health check requested
+[2025-11-07T05:15:16.054Z] [INFO] [DOWNLOADS] Catalog requested by tier: community
+[2025-11-07T05:15:25.845Z] [ERROR] [STRIPE] Checkout error: Expired API Key provided: rk_live_*********************************************************************************************X3zdjl
+[2025-11-07T05:17:32.337Z] [SUCCESS] [DOWNLOADS] community tier downloading: linux/RinaWarp Terminal Pro-1.0.0.AppImage
+[2025-11-07T05:17:32.338Z] [INFO] [DOWNLOADS] 📥 Download: {"timestamp":"2025-11-07T05:17:32.338Z","email":"anonymous","tier":"community","platform":"linux","filename":"RinaWarp Terminal Pro-1.0.0.AppImage"}
+[2025-11-07T05:25:23.327Z] [ERROR] [STRIPE] Webhook signature verification failed: No stripe-signature header value was provided.
+[2025-11-07T05:25:59.874Z] [SUCCESS] [DOWNLOADS] community tier downloading: linux/RinaWarp Terminal Pro-1.0.0.AppImage
+[2025-11-07T05:25:59.875Z] [INFO] [DOWNLOADS] 📥 Download: {"timestamp":"2025-11-07T05:25:59.875Z","email":"anonymous","tier":"community","platform":"linux","filename":"RinaWarp Terminal Pro-1.0.0.AppImage"}
+[2025-11-07T05:32:06.980Z] [INFO] [HEALTH] Health check requested

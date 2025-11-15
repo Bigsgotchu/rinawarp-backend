@@ -1,0 +1,12 @@
+[2025-11-04T02:43:28.854Z] [INFO] [SERVER] 🌍 Loaded environment from ../.env.production
+[2025-11-04T02:43:28.874Z] [SUCCESS] [SERVER] 🚀 RinaWarp backend running on port 10000
+[2025-11-04T02:43:28.874Z] [INFO] [SERVER] 🌍 Environment: production
+[2025-11-04T02:43:28.874Z] [INFO] [SERVER] 🔒 CORS Origins: https://rinawarptech.com, https://www.rinawarptech.com, https://rinawarp-terminal.netlify.app
+🌙 [CALM RINA]: Backend initialized and ready to serve!
+[2025-11-04T02:43:42.961Z] [INFO] [HEALTH] Health check requested
+[2025-11-04T02:43:51.067Z] [INFO] [TEST] Test error endpoint triggered
+[2025-11-04T02:43:51.070Z] [ERROR] [ERROR] Unhandled error: 🧪 Test error from RinaWarp backend - Sentry integration test
+[2025-11-04T02:44:01.073Z] [INFO] [SERVER] 
+SIGTERM received. Starting graceful shutdown...
+[2025-11-04T02:44:01.075Z] [SUCCESS] [SERVER] ✅ Server closed successfully
+[2025-11-04T02:44:01.076Z] [INFO] [SERVER] 👋 Goodbye!

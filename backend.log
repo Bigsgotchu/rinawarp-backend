@@ -1,0 +1,17 @@
+🌍 Using environment file: ../.env.development
+[36m2025-11-14T05:48:02.261Z[0m [34m[INFO][0m [33m[SERVER][0m 🌍 Loaded environment from ../.env.development
+🧩 Terminal WebSocket server attached at /ws/terminal
+[36m2025-11-14T05:48:02.265Z[0m [34m[INFO][0m [33m[SERVER][0m 🔌 Terminal WebSocket server attached
+[32m2025-11-14T05:48:02.267Z[0m [32m[SUCCESS][0m [33m[SERVER][0m [32m🚀 RinaWarp backend running on port 3001[0m
+[36m2025-11-14T05:48:02.267Z[0m [34m[INFO][0m [33m[SERVER][0m 🌍 Environment: development
+[36m2025-11-14T05:48:02.267Z[0m [34m[INFO][0m [33m[SERVER][0m 🔒 CORS Origins: https://rinawarptech.com, https://www.rinawarptech.com, http://localhost:3000
+[36m2025-11-14T05:48:02.267Z[0m [34m[INFO][0m [33m[SERVER][0m 🔌 WebSocket Endpoint: ws://localhost:3001/ws/terminal
+[36m2025-11-14T05:48:02.267Z[0m [34m[INFO][0m [33m[SERVER][0m 🖥️ Terminal REST API: http://localhost:3001/api/terminal
+[35m[1m
+   🧜‍♀️ Rina says: Backend initialized and ready to serve!
+   [0m
+[36m2025-11-14T05:48:19.647Z[0m [34m[INFO][0m [33m[HEALTH][0m Health check requested
+[36m2025-11-14T05:48:42.195Z[0m [34m[INFO][0m [33m[HEALTH][0m Health check requested
+[36m2025-11-14T06:07:06.725Z[0m [34m[INFO][0m [33m[HEALTH][0m Health check requested
+[36m2025-11-14T06:17:13.904Z[0m [34m[INFO][0m [33m[HEALTH][0m Health check requested
+[36m2025-11-14T06:25:09.124Z[0m [34m[INFO][0m [33m[HEALTH][0m Health check requested

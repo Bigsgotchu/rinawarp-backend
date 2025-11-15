@@ -1,0 +1,11 @@
+🌍 Using environment file: ../.env.production
+🧩 Terminal WebSocket server attached at /ws/terminal
+[32m2025-11-14T20:03:04.123Z[0m [32m[SUCCESS][0m [33m[SERVER][0m [32m🚀 RinaWarp backend running on port 3001[0m
+[35m[1m
+   🧜‍♀️ Rina says: Backend initialized and ready to serve!
+   [0m
+[32m2025-11-14T20:03:07.208Z[0m [32m[SUCCESS][0m [33m[BILLING][0m [32mCheckout session created successfully for starter[0m
+[32m2025-11-14T20:03:32.370Z[0m [32m[SUCCESS][0m [33m[BILLING][0m [32mCheckout session created successfully for creator[0m
+[32m2025-11-14T20:03:32.778Z[0m [32m[SUCCESS][0m [33m[BILLING][0m [32mCheckout session created successfully for pioneer[0m
+[32m2025-11-14T20:03:33.290Z[0m [32m[SUCCESS][0m [33m[BILLING][0m [32mCheckout session created successfully for pro[0m
+[32m2025-11-14T20:47:54.908Z[0m [32m[SUCCESS][0m [33m[BILLING][0m [32mCheckout session created successfully for starter[0m

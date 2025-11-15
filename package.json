@@ -1,0 +1,63 @@
+{
+  "name": "rinawarp-backend",
+  "version": "1.0.0",
+  "description": "RinaWarp Terminal Pro Backend API Server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "build": "echo 'No build step required for Node.js backend'",
+    "test": "echo 'No tests specified'",
+    "lint": "eslint *.js routes/*.js utils/*.js",
+    "lint:fix": "eslint *.js routes/*.js utils/*.js --fix",
+    "kill-backend": "pkill -f 'node.*server.js' || echo 'No backend process found'",
+    "status": "ps aux | grep 'node.*server.js' | grep -v grep || echo 'Backend not running'",
+    "migrate:deploy": "npx prisma migrate deploy",
+    "migrate:reset": "npx prisma migrate reset",
+    "seed:plans": "node ../scripts/seed-terminal-plans.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "@sentry/node": "^10.22.0",
+    "@sentry/profiling-node": "^10.22.0",
+    "@supabase/supabase-js": "^2.46.2",
+    "aws-sdk": "^2.1692.0",
+    "chalk": "^5.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "elevenlabs": "^0.4.0",
+    "express": "^4.21.2",
+    "groq-sdk": "^0.35.0",
+    "helmet": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^6.0.1",
+    "multer": "^1.4.5-lts.2",
+    "nodemailer": "^7.0.10",
+    "openai": "^6.9.0",
+    "stripe": "^16.0.0",
+    "uuid": "^13.0.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "nodemon": "^3.1.10",
+    "prisma": "^5.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "api",
+    "server",
+    "ai",
+    "terminal",
+    "payments",
+    "express",
+    "rest"
+  ],
+  "author": "RinaWarp Team",
+  "license": "MIT"
+}

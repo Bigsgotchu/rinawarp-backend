@@ -1,0 +1,9 @@
+🌍 Using environment file: ../.env.production
+🧩 Terminal WebSocket server attached at /ws/terminal
+[32m2025-11-14T20:01:18.366Z[0m [32m[SUCCESS][0m [33m[SERVER][0m [32m🚀 RinaWarp backend running on port 3001[0m
+[35m[1m
+   🧜‍♀️ Rina says: Backend initialized and ready to serve!
+   [0m
+[31m2025-11-14T20:01:35.398Z[0m [31m[ERROR][0m [33m[STRIPE][0m [31mBilling checkout error for starter: Invalid API Key provided: sk_test_*****_123[0m
+Terminal WebSocket server closed
+[32m2025-11-14T20:02:50.153Z[0m [32m[SUCCESS][0m [33m[SERVER][0m [32m✅ HTTP server closed successfully[0m

@@ -1,0 +1,101 @@
+/**
+ * =====================================================
+ *  RinaWarp Terminal Pro — Populate Test Licenses
+ * =====================================================
+ * Adds our test licenses to the main license database
+ * =====================================================
+ */
+
+import express from 'express';
+
+const router = express.Router();
+
+// POST /api/test/populate-licenses - Add test licenses to main database
+router.post('/populate-licenses', async (req, res) => {
+  try {
+    // Import the main license system from stripe-webhook
+    const { default: stripeWebhookRoutes } = await import('./stripe-webhook.js');
+    
+    // Our test licenses that need to be added to main database
+    const testLicenses = [
+      {
+        key: 'RWP-TEST-PRO-315264-BSUS',
+        plan: 'Pro',
+        email: 'testcustomer@example.com',
+        status: 'active',
+        maxActivations: 3,
+        activations: 0,
+        createdAt: '2025-11-14T16:38:35.264Z',
+        metadata: {
+          source: 'test_flow',
+          stripeSessionId: 'cs_test_mock_123',
+          test_mode: true
+        }
+      },
+      {
+        key: 'RWP-TEST-PRO-451434-3J79',
+        plan: 'Pro',
+        email: 'pro.customer@example.com',
+        status: 'active',
+        maxActivations: 3,
+        activations: 0,
+        createdAt: '2025-11-14T16:40:51.434Z',
+        metadata: {
+          source: 'test_flow',
+          stripeSessionId: 'cs_test_mock_123',
+          test_mode: true
+        }
+      },
+      {
+        key: 'RWP-TEST-PION-474846-WEGK',
+        plan: 'Pioneer',
+        email: 'pioneer.customer@example.com',
+        status: 'active',
+        maxActivations: 10,
+        activations: 0,
+        createdAt: '2025-11-14T16:41:14.846Z',
+        metadata: {
+          source: 'test_flow',
+          stripeSessionId: 'cs_test_mock_123',
+          test_mode: true
+        }
+      }
+    ];
+
+    // Add each license to the main database
+    const addedLicenses = [];
+    
+    for (const license of testLicenses) {
+      try {
+        // Access the global licenses Map from stripe-webhook
+        const globalStripedWebhook = globalThis.__stripeWebhookModule || await import('./stripe-webhook.js');
+        
+        // For now, we'll store them in a test global that the license routes can access
+        global.testMainLicenses = global.testMainLicenses || new Map();
+        global.testMainLicenses.set(license.key, license);
+        
+        addedLicenses.push(license.key);
+        console.log(`✅ Added test license to main database: ${license.key}`);
+        
+      } catch (error) {
+        console.error(`❌ Failed to add license ${license.key}:`, error.message);
+      }
+    }
+
+    res.json({
+      ok: true,
+      message: `Added ${addedLicenses.length} test licenses to main database`,
+      added_licenses: addedLicenses,
+      total_in_test_database: testLicenses.length
+    });
+
+  } catch (error) {
+    console.error('Failed to populate test licenses:', error);
+    res.status(500).json({
+      ok: false,
+      error: 'Failed to populate test licenses: ' + error.message
+    });
+  }
+});
+
+export default router;

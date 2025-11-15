@@ -1,0 +1,14 @@
+[
+  {
+    "type": "user",
+    "text": "Hello Rina! Remember that I love programming and terminal commands.",
+    "timestamp": "2025-09-13T19:57:09.608Z",
+    "importance": 5
+  },
+  {
+    "type": "rina",
+    "text": "Hello! Of course, I remember! It’s always great to chat with a fellow programming enthusiast. What terminal commands or programming projects are you diving into today?",
+    "timestamp": "2025-09-13T19:57:09.612Z",
+    "importance": 5
+  }
+]
