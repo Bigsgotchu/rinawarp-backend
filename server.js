@@ -14,11 +14,11 @@ import fs from 'fs';
 
 // Auto-select environment file
 const envFile =
-  process.env.NODE_ENV === 'production' && fs.existsSync('../.env.production')
-    ? '../.env.production'
-    : fs.existsSync('../.env.development')
-      ? '../.env.development'
-      : '../.env.example';
+  process.env.NODE_ENV === 'production' && fs.existsSync('./.env.production')
+    ? './.env.production'
+    : fs.existsSync('./.env.development')
+      ? './.env.development'
+      : './.env.example';
 
 dotenv.config({ path: envFile });
 
@@ -81,6 +81,7 @@ app.use(helmet({
 const corsOptions = {
   origin: process.env.CORS_ORIGINS?.split(',') || [
     'https://rinawarptech.com',
+    'https://main--rinawarp-terminal-pro.netlify.app',
     'http://localhost:5173',
     'http://localhost:3000'
   ],
